@@ -1,24 +1,32 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { SoundboardEntryComponent } from './components/soundboard-entry.component';
+import sounds from './sounds.json';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  	<div>
+	    <header>
+		    <h1 className="title">
+			    Team blue sound board
+		    </h1>
+	    </header>
+	    <div className="sound-board">
+		    {
+		        sounds.map(
+				    (sound, i) => (
+				        <span
+						    className={'sound-board__item sound-board__item--' + ((i % 4) + 1)}
+						    key={'sound-board__item--' + i}>
+
+			                <SoundboardEntryComponent
+							    {...sound}>
+						    </SoundboardEntryComponent>
+					    </span>
+				    )
+			    )
+		    }
+	    </div>
     </div>
   );
 }
