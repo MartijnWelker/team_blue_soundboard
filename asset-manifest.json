@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/MartijnWelker/team_blue_soundboard/static/css/main.44ce3840.chunk.css",
+    "main.js": "/MartijnWelker/team_blue_soundboard/static/js/main.d30dd383.chunk.js",
+    "main.js.map": "/MartijnWelker/team_blue_soundboard/static/js/main.d30dd383.chunk.js.map",
+    "runtime-main.js": "/MartijnWelker/team_blue_soundboard/static/js/runtime-main.6ef8606b.js",
+    "runtime-main.js.map": "/MartijnWelker/team_blue_soundboard/static/js/runtime-main.6ef8606b.js.map",
+    "static/js/2.06ae92e0.chunk.js": "/MartijnWelker/team_blue_soundboard/static/js/2.06ae92e0.chunk.js",
+    "static/js/2.06ae92e0.chunk.js.map": "/MartijnWelker/team_blue_soundboard/static/js/2.06ae92e0.chunk.js.map",
+    "index.html": "/MartijnWelker/team_blue_soundboard/index.html",
+    "precache-manifest.ff93db299c3704a9cbed56abefd37dfc.js": "/MartijnWelker/team_blue_soundboard/precache-manifest.ff93db299c3704a9cbed56abefd37dfc.js",
+    "service-worker.js": "/MartijnWelker/team_blue_soundboard/service-worker.js",
+    "static/css/main.44ce3840.chunk.css.map": "/MartijnWelker/team_blue_soundboard/static/css/main.44ce3840.chunk.css.map",
+    "static/js/2.06ae92e0.chunk.js.LICENSE.txt": "/MartijnWelker/team_blue_soundboard/static/js/2.06ae92e0.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6ef8606b.js",
+    "static/js/2.06ae92e0.chunk.js",
+    "static/css/main.44ce3840.chunk.css",
+    "static/js/main.d30dd383.chunk.js"
+  ]
+}
