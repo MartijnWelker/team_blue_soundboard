@@ -42,16 +42,19 @@ export class SoundboardEntryComponent extends React.Component<SoundboardEntryCom
 	public onClick(): void {
 		const sound: Howl = new Howl({
 			src: [
-				`../../../sounds/${this.props.url}`,
+				`${process.env.PUBLIC_URL}/sounds/${this.props.url}`,
 			]
 		});
 
-		this.setState({
-			...this.state,
-			playing: true,
-		});
-
-		sound.play();
+		sound.once(
+			'play',
+			() => {
+				this.setState({
+					...this.state,
+					playing: true,
+				});
+			}
+		)
 
 		sound.once(
 			'end',
@@ -62,6 +65,8 @@ export class SoundboardEntryComponent extends React.Component<SoundboardEntryCom
 				});
 			}
 		);
+
+		sound.play();
 	}
 
 }
